@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "5fe882ba-7738-43f1-8f61-8d17462c22f2",
+		"name": "Billing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Billing get by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.qaauto.co.nz/api/v1/billingOrders",
+					"protocol": "https",
+					"host": [
+						"api",
+						"qaauto",
+						"co",
+						"nz"
+					],
+					"path": [
+						"api",
+						"v1",
+						"billingOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Billing get All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.qaauto.co.nz/api/v1/billingOrders",
+					"protocol": "https",
+					"host": [
+						"api",
+						"qaauto",
+						"co",
+						"nz"
+					],
+					"path": [
+						"api",
+						"v1",
+						"billingOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Billing post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"FirstName\": \"rinaz\",\r\n  \"LastName\": \"mahek\",\r\n  \"Email\": \"rrr@gmail.com\",\r\n  \"AddressLine1\": \"rrr\",\r\n  \"AddressLine2\": \"gggg\",\r\n  \"PhoneNumber\": \"1111122222\",\r\n  \"Comment\": \"nnn\",\r\n  \"ZipCode\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.qaauto.co.nz/api/v1/billingOrders",
+					"protocol": "https",
+					"host": [
+						"api",
+						"qaauto",
+						"co",
+						"nz"
+					],
+					"path": [
+						"api",
+						"v1",
+						"billingOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Billing Put by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"FirstName\": \"RIYAZ\",\r\n  \"LastName\": \"BAIG\",\r\n  \"Email\": \"rrr@gmail.com\",\r\n  \"AddressLine1\": \"rrr\",\r\n  \"AddressLine2\": \"gggg\",\r\n  \"PhoneNumber\": \"1111122222\",\r\n  \"Comment\": \"nnn\",\r\n  \"ZipCode\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.qaauto.co.nz/api/v1/billingOrders/2039",
+					"protocol": "https",
+					"host": [
+						"api",
+						"qaauto",
+						"co",
+						"nz"
+					],
+					"path": [
+						"api",
+						"v1",
+						"billingOrders",
+						"2039"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Billing Put by ID local",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"firstName\": \"naziya\",\r\n        \"lastName\": \"abdul\",\r\n        \"email\": \"naziya6@gmail.com\",\r\n        \"phone\": \"1212121212\",\r\n        \"city\": \"hyfdds\",\r\n        \"zipCode\": \"87654\",\r\n        \"addressLine1\": \"shhfgdhghj\",\r\n        \"addressLine2\": \"sgrdghy\",\r\n        \"itemNumber\": 0,\r\n        \"comment\": \"stkhgff\",\r\n        \"state\": \"AL\"\r\n    }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/BillingOrder/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BillingOrder",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Billing delete local",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/BillingOrder/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BillingOrder",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Billing get All local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/BillingOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BillingOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Billing post local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"rayan\",\r\n  \"lastName\": \"abdul\",\r\n  \"email\": \"rayan@gmail.com\",\r\n  \"phone\": \"1212321212\",\r\n  \"city\": \"hyfddf\",\r\n  \"zipCode\": \"87554\",\r\n  \"addressLine1\": \"gghhfgdhghj\",\r\n  \"addressLine2\": \"sgerrdghy\",\r\n  \"itemNumber\": 0,\r\n  \"comment\": \"stkgfdhgff\",\r\n  \"state\": \"AL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/BillingOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BillingOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Billing get by ID local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/BillingOrder/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BillingOrder",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
